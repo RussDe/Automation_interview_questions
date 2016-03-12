@@ -1,5 +1,6 @@
 package Algorithm_Questions;
 
+// buble class
 public class Buble {
 
     public static int[] sortBuble(int[] array) {
