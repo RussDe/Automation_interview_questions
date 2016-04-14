@@ -47,8 +47,8 @@ public class One_integer_parameter {
         while (iteration > 0) {
             position = (iteration - 1) % 26;
             i = 65 + position;
-            newString = new Character((char) i).toString() + newString;
-            iteration = (int) ((iteration - position) / 26);
+            newString = Character.toString((char) i) + newString;
+            iteration = (iteration - position) / 26;
         }
         return newString;
     }

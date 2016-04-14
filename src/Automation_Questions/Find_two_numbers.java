@@ -26,7 +26,7 @@ public class Find_two_numbers {
     }
 
     public static int[] twoSum(int[] array, int target) {
-        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        HashMap<Integer, Integer> map = new HashMap<>();
         int[] result = new int[2];
         for (int i = 0; i < array.length; i++) {
             if (map.containsKey(array[i])) {

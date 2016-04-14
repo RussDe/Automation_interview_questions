@@ -2,7 +2,6 @@ package Automation_Questions;
 
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.Map;
 import java.util.Scanner;
 
 /**
@@ -12,13 +11,13 @@ public class Count_how_many_each_character {
     public static void main(String[] args) throws IOException {
         System.out.print("Input your string: ");
         Scanner sc = new Scanner(System.in);
-        String myString = sc.nextLine().toString().toLowerCase();
+        String myString = sc.nextLine().toLowerCase();
         char[] myChar = myString.toCharArray();
 
         //Using Array
         int[] myNumber = new int[255];
-        for (int i = 0; i < myChar.length; i++) {
-            myNumber[myChar[i]]++;
+        for (char aMyChar : myChar) {
+            myNumber[aMyChar]++;
         }
         for (int i = 0; i < 255; i++) {
             if (myNumber[i] > 0)
@@ -26,7 +25,7 @@ public class Count_how_many_each_character {
         }
 
         //Using Hashmap
-        HashMap<Character, Integer> myMap = new HashMap<Character, Integer>();
+        HashMap<Character, Integer> myMap = new HashMap<>();
         for (char ch : myChar) {
             if (myMap.containsKey(ch)) {
                 int number = myMap.get(ch);

@@ -1,4 +1,4 @@
-package Algorithm_Questions;
+package Algorithm_Questions.sorting;
 
 //all sorting algorithms
 public class Sorting {

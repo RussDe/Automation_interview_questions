@@ -1,9 +1,8 @@
-package Algorithm_Questions;
+package Algorithm_Questions.sorting;
 
-// buble class
 public class Buble {
 
-    public static int[] sortBuble(int[] array) {
+    public static int[] sortBubble(int[] array) {
         int counter = 0;
         int last = array.length - 1;
         for (int i = 1; i < last; i++) {

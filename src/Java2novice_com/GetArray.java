@@ -8,7 +8,7 @@ public class GetArray {
         int [] array = new int [size];
         int length = array.length;
         for (int i= 0; i < length; i++){
-            array[i]=(int)(random()*(max-min));;
+            array[i]=(int)(random()*(max-min));
         }
         for (int item: array){
             System.out.print(" " +item);

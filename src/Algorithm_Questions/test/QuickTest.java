@@ -1,15 +1,13 @@
 package Algorithm_Questions.test;
 
-import Algorithm_Questions.Quick;
-import Algorithm_Questions.Sorting;
+import Algorithm_Questions.sorting.Quick;
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
 import java.util.Arrays;
 import java.util.Random;
-
-import static org.junit.Assert.*;
 
 public class QuickTest {
     int[] array;
@@ -21,7 +19,7 @@ public class QuickTest {
         int size = rand.nextInt(20) + 1;
         array = new int[size];
         for (int i = 0; i < size - 1; i++) {
-            array[i] = 1 + rand.nextInt(50);
+            array[i] = rand.nextInt(50);
         }
         System.out.println(Arrays.toString(array));
     }
@@ -36,6 +34,6 @@ public class QuickTest {
     public void testArrayIsSorted() throws Exception {
         int[] sortedArray = array;
         Arrays.sort(sortedArray);
-        assertArrayEquals("Expected equals", sortedArray, Quick.sortQuick(array));
+        Assert.assertArrayEquals("Expected equals", sortedArray, Quick.sortQuick(array));
     }
 }

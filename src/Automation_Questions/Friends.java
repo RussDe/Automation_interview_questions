@@ -1,7 +1,6 @@
 package Automation_Questions;
 
 import java.io.IOException;
-import java.util.LinkedList;
 
 /**
  * 13. Add functions to make_friend(a,b), unfriend(a,b), direct_friends(a), indirect_friends(b).

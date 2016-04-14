@@ -1,4 +1,4 @@
-package Algorithm_Questions;
+package Algorithm_Questions.sorting;
 
 import java.util.Random;
 

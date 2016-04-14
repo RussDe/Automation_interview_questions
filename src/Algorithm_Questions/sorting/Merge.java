@@ -1,4 +1,4 @@
-package Algorithm_Questions;
+package Algorithm_Questions.sorting;
 
 public class Merge {
     static int[] sortMerge(int[] array) {
@@ -25,8 +25,7 @@ public class Merge {
     static int[] leftArray(int[] array) {
         int size = array.length / 2;
         int[] newArray = new int[size];
-        for (int i = 0; i < size; i++)
-            newArray[i] = array[i];
+        System.arraycopy(array, 0, newArray, 0, size);
         return newArray;
     }
 
@@ -34,8 +33,7 @@ public class Merge {
     static int[] rightArray(int[] array) {
         int size = array.length - (array.length / 2);
         int[] newArray = new int[size];
-        for (int i = 0; i < size; i++)
-            newArray[i] = array[array.length / 2 + i];
+        System.arraycopy(array, array.length / 2, newArray, 0, size);
         return newArray;
     }
 
