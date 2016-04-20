@@ -1,5 +1,6 @@
 package Algorithm_Questions.sorting;
 
+//Buble sort
 public class Buble {
 
     public static int[] sortBubble(int[] array) {
@@ -11,6 +12,7 @@ public class Buble {
 
                 if (array[j] > array[j + 1]) {
                     Sorting.swap(array, j, j + 1);
+                    counter++;
                     flag = true;
                 }
             }
@@ -18,6 +20,7 @@ public class Buble {
             if (!flag)
                 break;
         }
+        System.out.println("Total " + counter);
         return array;
     }
 }

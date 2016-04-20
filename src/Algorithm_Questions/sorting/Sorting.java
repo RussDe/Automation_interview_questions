@@ -1,5 +1,8 @@
 package Algorithm_Questions.sorting;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 //all sorting algorithms
 public class Sorting {
     public static void main(String[] args) {
@@ -7,21 +10,22 @@ public class Sorting {
         int[] array = {13, 3, 9, 6, 12, 7, 2, 0, 18, 4, 6, 5};
         //int[] array = {1,2,3,4,5};
         printArray(array);
+        //System.out.println(Arrays.toString(array));
 
-    /*
+
         // 1.Selection
-        printArray(Selection.sortSelection(array));
+        //printArray(Selection.sortSelection(array));
 
         //2. Buble
-        printArray(Buble.sortBuble(array));
+        //printArray(Buble.sortBubble(array));
 
 
         //3. Insertion
-        printArray(Insertion.sortInsertion(array));
+        //printArray(Insertion.sortInsertion(array));
 
         //4. Merge
-        printArray(Merge.sortMerge(array));
-    */
+        //printArray(Merge.sortMerge(array));
+
 
         //5. Quick sort
         printArray(Quick.sortQuick(array));

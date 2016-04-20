@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 /**
  * 9*. Write a method  that would take one integer parameter from 1 to ~.  That method would need to generate columns similar to Excel.
- * For example if I call  number_to_colums(3) it would return -- “A, B, C”.
- * If I call number_to_colums(28), it would return -- “A, B, C...Z, AA, AB”
+ * For example if I call  number_to_columns(3) it would return -- “A, B, C”.
+ * If I call number_to_columns(28), it would return -- “A, B, C...Z, AA, AB”
  */
 
 public class One_integer_parameter {

@@ -9,8 +9,8 @@ public class CreateArray {
         int[] array = new int[size];
         int range = 50;
         Random rand = new Random();
-        for (int item : array) {
-            item = rand.nextInt(range);
+        for (int i=0; i<array.length; i++) {
+            array[i] = rand.nextInt(range);
         }
         System.out.println(Arrays.toString(array));
         return array;

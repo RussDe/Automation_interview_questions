@@ -1,5 +1,6 @@
 package Algorithm_Questions.sorting;
 
+//Merge sort
 public class Merge {
     static int[] sortMerge(int[] array) {
         mergeSort(array);

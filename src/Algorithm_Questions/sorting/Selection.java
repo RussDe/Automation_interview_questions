@@ -1,6 +1,6 @@
 package Algorithm_Questions.sorting;
 
-//Selection algorithm
+//Selection sort
 public class Selection {
     static int[] sortSelection(int[] array) {
         //to count iterations

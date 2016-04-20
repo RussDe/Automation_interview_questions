@@ -2,7 +2,7 @@ package Algorithm_Questions.sorting;
 
 import java.util.Random;
 
-// quick sort
+// Quick sort
 public class Quick {
 
     public static int[] sortQuick(int[] array) {
@@ -22,8 +22,6 @@ public class Quick {
         //int pivot = array[(left + right) / 2];
         Random rand = new Random();
         int pivot = array[left + rand.nextInt(right - left)];
-
-
 
         while (left <= right) {
             while (array[left] < pivot)
