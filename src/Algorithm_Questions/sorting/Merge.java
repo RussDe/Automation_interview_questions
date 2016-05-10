@@ -43,7 +43,8 @@ public class Merge {
         int iLeft = 0;
         int iRight = 0;
         for (int i = 0; i < result.length; i++) {
-            if (iRight >= right.length || (iLeft < left.length && left[iLeft] <= right[iRight])) {
+            if (iRight >= right.length ||
+                    (iLeft < left.length && left[iLeft] <= right[iRight])) {
                 result[i] = left[iLeft];
                 iLeft++;
             } else {

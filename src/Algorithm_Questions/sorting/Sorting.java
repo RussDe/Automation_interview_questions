@@ -7,7 +7,7 @@ import java.util.Arrays;
 public class Sorting {
     public static void main(String[] args) {
         //creating simple array
-        int[] array = {13, 3, 9, 6, 12, 7, 2, 0, 18, 4, 6, 5};
+        int[] array = {13, 3, 9, 6, 12, 7, 2, 0, 18, 4, 6};
         //int[] array = {1,2,3,4,5};
         printArray(array);
         //System.out.println(Arrays.toString(array));
