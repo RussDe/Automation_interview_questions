@@ -133,7 +133,7 @@ public class Node {
                 Node temp = thisNode.getNext();
                 thisNode.setNext(temp.getNext());
             }
-
+            this.removeListSize();
         }
     }
 
