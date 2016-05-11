@@ -15,21 +15,25 @@ public class Node {
         this.listSize = 0;
     }
 
-    Node(int item) {
+    private Node(int item) {
         this.item = item;
         next = null;
     }
 
     //getters and setters
-    public int getListSize() {
+    private int getListSize() {
         return listSize;
     }
 
-    public void addListSize() {
+    private void addListSize() {
         this.listSize++;
     }
 
-    public int getItem() {
+    private void removeListSize() {
+        this.listSize--;
+    }
+
+    private int getItem() {
         return this.item;
     }
 
@@ -37,16 +41,16 @@ public class Node {
         this.item = item;
     }
 
-    public Node getNext() {
+    private Node getNext() {
         return this.next;
     }
 
-    public void setNext(Node next) {
+    private void setNext(Node next) {
         this.next = next;
     }
 
     //1. adding before the head
-    public void addToHead(int item) {
+    private void addToHead(int item) {
         Node newNode = new Node(item);
         if (getListSize() == 0) {
             this.head = newNode;
@@ -61,7 +65,7 @@ public class Node {
     //2. adding to the tail
     public void addToTail(int item) {
         Node newNode = new Node(item);
-        if (getListSize() == 0) {
+        if (this.getListSize() == 0) {
             this.head = newNode;
             this.tail = head;
         } else {
@@ -71,18 +75,81 @@ public class Node {
         addListSize();
     }
 
+    //3. adding to any place
+    public void addNode(int position, int item) {
+
+        if (position < 0 || position > getListSize()) {
+            System.out.println("Position not within a range");
+        } else {
+            if (position == 0)
+                addToHead(item);
+            else if (position == getListSize())
+                addToTail(item);
+            else {
+                Node newNode = new Node(item);
+                Node thisNode = head;
+                for (int i = 1; i < position; i++) {
+                    thisNode = thisNode.getNext();
+                }
+                newNode.setNext(thisNode.getNext());
+                thisNode.setNext(newNode);
+                addListSize();
+            }
+        }
+    }
+
+    //4. deleting the head
+    public void deleteHead() {
+        Node temp = head;
+        head = temp.getNext();
+        this.removeListSize();
+    }
+
+    //5. deleting the tail
+    public void deleteTail() {
+        Node current = head;
+        for (int i = 1; i < getListSize() - 1; i++) {
+            current = current.getNext();
+        }
+        current.setNext(null);
+        tail = current;
+        this.removeListSize();
+    }
+
+    //6. deleting a node from position
+    public void deleteNode(int position) {
+        if (position < 0 || position > getListSize()) {
+            System.out.println("Position not within a range");
+        } else {
+            if (position == 0)
+                deleteHead();
+            else if (position == getListSize())
+                deleteTail();
+            else {
+                Node thisNode = head;
+                for (int i = 1; i < position - 1; i++) {
+                    thisNode = thisNode.getNext();
+                }
+                Node temp = thisNode.getNext();
+                thisNode.setNext(temp.getNext());
+            }
+
+        }
+    }
+
 
     //*. Print out LinkedList
     @Override
     public String toString() {
         Node thisNode = this.head;
         StringBuilder sb = new StringBuilder();
+        sb.append("[");
         while (thisNode != null) {
-            sb.append("[");
             sb.append(thisNode.getItem());
-            sb.append("]");
+            sb.append(", ");
             thisNode = thisNode.getNext();
         }
+        sb.deleteCharAt(sb.lastIndexOf(",")).deleteCharAt(sb.lastIndexOf(" ")).append("]");
         return sb.toString();
     }
 
