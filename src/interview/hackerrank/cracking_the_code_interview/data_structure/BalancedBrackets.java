@@ -13,11 +13,11 @@ import java.util.Scanner;
  * <p>
  * It contains no unmatched brackets.
  * The subset of brackets enclosed within the confines of a matched pair of brackets is also a matched pair of brackets.
- * Given  strings of brackets, determine whether each sequence of brackets is balanced. If a string is balanced, print YES on a new line; otherwise, print NO on a new line.
+ * Given  TagContentExtractor of brackets, determine whether each sequence of brackets is balanced. If a string is balanced, print YES on a new line; otherwise, print NO on a new line.
  * <p>
  * Input Format
  * <p>
- * The first line contains a single integer, , denoting the number of strings.
+ * The first line contains a single integer, , denoting the number of TagContentExtractor.
  * Each line  of the  subsequent lines consists of a single string, , denoting a sequence of brackets.
  * <p>
  * Constraints

@@ -40,7 +40,7 @@ import java.util.Scanner;
  * ,
  * Output Format
  * <p>
- * You must print the following three lines of output:
+ * You must print the following three lines of Output:
  * <p>
  * Array is sorted in numSwaps swaps., where  is the number of swaps that took place.
  * First Element: firstElement, where  is the first element in the sorted array.
@@ -55,7 +55,7 @@ import java.util.Scanner;
  * First Element: 1
  * Last Element: 3
  * Explanation 0
- * The array is already sorted, so  swaps take place and we print the necessary three lines of output shown above.
+ * The array is already sorted, so  swaps take place and we print the necessary three lines of Output shown above.
  * <p>
  * Sample Input 1
  * <p>
@@ -69,7 +69,7 @@ import java.util.Scanner;
  * Explanation 1
  * The array is not sorted, and its initial values are: . The following  swaps take place:
  * <p>
- * At this point the array is sorted and we print the necessary three lines of output shown above.
+ * At this point the array is sorted and we print the necessary three lines of Output shown above.
  */
 public class BubbleSort {
 

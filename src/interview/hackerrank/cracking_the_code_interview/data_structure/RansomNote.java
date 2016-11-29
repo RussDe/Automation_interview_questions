@@ -12,8 +12,8 @@ import java.util.Scanner;
  * Input Format
  * <p>
  * The first line contains two space-separated integers describing the respective values of  (the number of words in the magazine) and  (the number of words in the ransom note).
- * The second line contains  space-separated strings denoting the words present in the magazine.
- * The third line contains  space-separated strings denoting the words present in the ransom note.
+ * The second line contains  space-separated TagContentExtractor denoting the words present in the magazine.
+ * The third line contains  space-separated TagContentExtractor denoting the words present in the ransom note.
  * <p>
  * Constraints
  * <p>
