@@ -76,7 +76,7 @@ public class JavaList {
         }
         int numberOfQueries = scanner.nextInt();
         for (int i = 0; i < numberOfQueries; i++) {
-            command = (String) scanner.next();
+            command = scanner.next();
             if (command.equals("Insert")) {
                 int position = scanner.nextInt();
                 int value = scanner.nextInt();

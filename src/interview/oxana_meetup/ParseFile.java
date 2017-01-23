@@ -8,12 +8,10 @@ import java.util.Scanner;
 //FileReader
 public class ParseFile {
 
-    private static void parser(String fileName) throws IOException, FileNotFoundException {
+    private static void parser(String fileName) throws IOException {
         File file = new File(fileName);
         Scanner sc = new Scanner(file);
-        while (sc.hasNextLine()) {
-            System.out.println(sc.nextLine().toString());
-        }
+        while (sc.hasNextLine()) System.out.println(sc.nextLine().toString());
     }
 
     //from  file as a BufferedReader

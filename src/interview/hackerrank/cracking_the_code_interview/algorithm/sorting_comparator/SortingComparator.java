@@ -4,11 +4,17 @@ import java.util.Arrays;
 import java.util.Scanner;
 
 /**
- * Comparators are used to compare two objects. In this challenge, you'll create a comparator and use it to sort an array. The Player class is provided in the editor below; it has two fields:
+ * https://www.hackerrank.com/challenges/ctci-comparator-sorting
+ *
+ * Comparators are used to compare two objects. In this challenge, you'll create a comparator and use it to sort an array.
+ * The Player class is provided in the editor below; it has two fields:
  * <p>
  * A string, .
  * An integer, .
- * Given an array of  Player objects, write a comparator that sorts them in order of decreasing score; if  or more players have the same score, sort those players alphabetically by name. To do this, you must create a Checker class that implements the SortingComparator interface, then write an int compare(Player a, Player b) method implementing the SortingComparator.compare(T o1, T o2) method.
+ * Given an array of  Player objects, write a comparator that sorts them in order of decreasing score;
+ * if  or more players have the same score, sort those players alphabetically by name.
+ * To do this, you must create a Checker class that implements the SortingComparator interface,
+ * then write an int compare(Player a, Player b) method implementing the SortingComparator.compare(T o1, T o2) method.
  * <p>
  * Input Format
  * <p>
@@ -22,7 +28,8 @@ import java.util.Scanner;
  * Player names consist of lowercase English alphabetic letters.
  * Output Format
  * <p>
- * You are not responsible for printing any Output to stdout. Locked stub code in Solution will create a Checker object, use it to sort the Player array, and print each sorted element.
+ * You are not responsible for printing any Output to stdout. Locked stub code in Solution will create a Checker object,
+ * use it to sort the Player array, and print each sorted element.
  * <p>
  * Sample Input
  * <p>
@@ -59,8 +66,8 @@ public class SortingComparator {
 
         Arrays.sort(player, checker);
         //System.out.print(Arrays.toString(player));
-        for (int i = 0; i < player.length; i++) {
-            System.out.printf("%s, %s\n", player[i].name, player[i].score);
+        for (Player aPlayer : player) {
+            System.out.printf("%s, %s\n", aPlayer.name, aPlayer.score);
         }
     }
 }

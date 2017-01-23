@@ -7,7 +7,7 @@ package interview.automation;
 public class Reverse_string {
     public static void main(String[] args) {
         String oldString = "Hello world";
-        char[] letter = oldString.toCharArray();;
+        char[] letter = oldString.toCharArray();
         char tempLetter;
         for (int i = 0; i < letter.length / 2; i++) {
             tempLetter = letter[i];

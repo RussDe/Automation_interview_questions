@@ -58,7 +58,7 @@ public class JavaMap {
             map.put(name, phone);
         }
         while (scanner.hasNext()) {
-            String name = (String) scanner.nextLine();
+            String name = scanner.nextLine();
             System.out.println(map.containsKey(name) ? name + "=" + map.get(name) : "Not found");
         }
     }

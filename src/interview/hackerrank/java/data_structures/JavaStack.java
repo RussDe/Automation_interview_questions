@@ -67,10 +67,7 @@ public class JavaStack {
                     return false;
             }
         }
-        if (!stack.isEmpty())
-            return false;
-        else
-            return true;
+        return stack.isEmpty();
     }
 
     public static void main(String[] args) {
